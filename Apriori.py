@@ -2,8 +2,8 @@ import openpyxl
 from pathlib import Path
 
 # 设置最小支持度和置信度
-MIN_Support = 0.5
-MIN_Conf = 0.6
+MIN_Support = 0.7
+MIN_Conf = 0.7
 
 
 def DataFactory():
@@ -123,6 +123,7 @@ def reunionAcalcConf(itemset, itemWaitjudge, itemSupprotData, RelatedItemGroup):
 
 if __name__=='__main__':
     dataSet = DataFactory()
+    # print(dataSet)
     L,supportData=itemset_exhaustion(dataSet)
     rules = findRelatedItemGroup(L,supportData)
 
