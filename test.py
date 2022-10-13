@@ -13,5 +13,3 @@ for i in range(len(dataSet)):
     transactions[str(i)] = tmp
     
 print(transactions)
-
-# just a test for V2rayN and fiddler4
